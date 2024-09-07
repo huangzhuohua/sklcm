@@ -15,7 +15,42 @@
     <link href="https://v3.bootcss.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="https://v3.bootcss.com/examples/signin/signin.css" rel="stylesheet">
+<style>
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+</style>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="https://v3.bootcss.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -31,23 +66,35 @@
   <body>
 
     <div class="container">
-		<h1><p class="text-center">State Key Laboratories of Clinical Medicine (SKLCM)</p></h1>
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      </form>
-		<footer><p class="text-center">Powered by State Key Laboratories of Clinical Medicine</p></footer>
+			<h1>
+				<p class="text-center">State Key Laboratories of Clinical Medicine</p>
+			</h1>
+			<h3><p class="text-center">(SKLCM)</p></h3>
     </div> <!-- /container -->
+	<hr>
+    <div class="container">
+    </div> <!-- /container -->	
+    <div class="container">	
+		  <form class="form-signin">
+			<h2 class="form-signin-heading">Please sign in</h2>
+			<label for="inputEmail" class="sr-only">Email address</label>
+			<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+			<label for="inputPassword" class="sr-only">Password</label>
+			<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+			<div class="checkbox">
+			  <label>
+				<input type="checkbox" value="remember-me"> Remember me
+			  </label>
+			</div>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		  </form>
 
+    </div> <!-- /container -->
+	<footer class="navbar-fixed-bottom">
+		<div class="container">
+			<p class="text-center">Powered by State Key Laboratories of Clinical Medicine</p>
+		</div>	
+	</footer>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="https://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
